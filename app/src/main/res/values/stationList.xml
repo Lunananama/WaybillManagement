@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stationList">
+        <item>沈阳</item>
+        <item>成都</item>
+        <item>重庆</item>
+        <item>大连</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>武汉</item>
+    </string-array>
+</resources>

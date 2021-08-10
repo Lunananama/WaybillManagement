@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    android:background="@color/teal_700">
+
+    <!--将图片圆角化的控件，使用和ImageView非常类似-->
+    <!--居中显示-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/headeruserImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_defaultuser"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/headerusernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headeruserImage"
+        android:layout_marginTop="5dp"
+        android:text="I'm a visitor until I log in~"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/icon_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nav_location"
+            android:layout_below="@id/headerusernameText" />
+
+        <TextView
+            android:id="@+id/headeruserdepartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/icon_location"
+            android:layout_marginLeft="5dp"
+            android:text="沈阳"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

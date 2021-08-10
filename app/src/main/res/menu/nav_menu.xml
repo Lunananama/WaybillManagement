@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--在NavigationView中显示具体菜单项-->
+
+    <!--一个组，只能单选-->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navAddOrder"
+            android:icon="@drawable/ic_addorder"
+            android:title="添加运单" />
+
+        <item
+            android:id="@+id/navXMLOrder"
+            android:icon="@drawable/ic_xml"
+            android:title="查询运单XML" />
+
+        <item
+            android:id="@+id/navJSONOrder"
+            android:icon="@drawable/ic_json"
+            android:title="查询运单JSON" />
+
+        <item
+            android:id="@+id/navLOCOrder"
+            android:icon="@drawable/ic_loc"
+            android:title="查询本地运单"/>
+
+        <item
+            android:id="@+id/navSetting"
+            android:icon="@drawable/ic_setting"
+            android:title="设置"/>
+
+    </group>
+
+</menu>

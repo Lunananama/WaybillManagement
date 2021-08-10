@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/userswitch"
+        android:icon="@drawable/ic_switchuser"
+        android:title="User Switch"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/userregister"
+        android:icon="@drawable/ic_register"
+        android:title="Register"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/usersignout"
+        android:icon="@drawable/ic_signout"
+        android:title="Sign Out"
+        app:showAsAction="never"/>
+
+</menu>

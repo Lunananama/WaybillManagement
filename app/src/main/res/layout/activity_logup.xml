@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200">
+
+    <!--自己写的导航栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/loguptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/logupusernameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_user"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="用户名:" />
+
+            <EditText
+                android:id="@+id/logupusernameEdit"
+                android:background="@color/white"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/logupuserpassLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_pass"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="密码:" />
+
+            <EditText
+                android:id="@+id/logupuserpassEdit"
+                android:background="@color/white"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logupusersexLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_sex"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="性别：" />
+
+            <Spinner
+                android:id="@+id/logupusersexSpinner"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:entries="@array/sexList"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/logupuserdepartLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_userloc"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="发货站：" />
+
+            <Spinner
+                android:id="@+id/logupuserdepartSpinner"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:entries="@array/stationList"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/logupusertelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_usertel"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="联系电话:" />
+
+            <EditText
+                android:id="@+id/logupusertelEdit"
+                android:background="@color/white"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/addorderbuttons"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/logupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="注 册"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  "/>
+
+            <Button
+                android:id="@+id/logupbackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="返 回"/>
+
+        </LinearLayout>
+
+<!--        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/logupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:text="注 册" />
+
+            <Button
+                android:id="@+id/logupbackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/logupButton"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:text="返 回" />
+
+        </RelativeLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>
